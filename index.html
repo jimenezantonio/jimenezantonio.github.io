@@ -1,165 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página Web</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Primera Página Web</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
 
-        .contenedor {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+    .contenedor {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
 
-        header {
-            background: #35424a;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+    header {
+      background: #35424a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
 
-        nav {
-            background: #e8491d;
-            padding: 10px;
-            text-align: center;
-        }
+    nav {
+      background: #e8491d;
+      padding: 10px;
+      text-align: center;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
 
-        main {
-            padding: 20px 0;
-            padding-bottom: 100px; /* para que el footer no tape los botones */
-        }
+    main {
+      padding: 20px 0 60px 0; /* margen inferior para que respire antes del footer */
+    }
 
-        footer {
-            background: #35424a;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+    footer {
+      background: #35424a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      border-top: 5px solid #222;
+    }
 
-        .pdf-section {
-            margin-top: 40px;
-        }
+    .pdf-section {
+      margin-top: 40px;
+    }
 
-        .pdf-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 20px;
-        }
+    .pdf-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
 
-        .pdf-button {
-            background-color: #ffffff;
-            border: 2px solid #28a745;
-            border-radius: 15px;
-            padding: 15px 25px;
-            text-decoration: none;
-            color: #28a745;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-            display: inline-block;
-        }
+    .pdf-button {
+      background-color: #ffffff;
+      border: 2px solid #28a745;
+      border-radius: 15px;
+      padding: 15px 25px;
+      text-decoration: none;
+      color: #28a745;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+    }
 
-        .pdf-button:hover {
-            background-color: #28a745;
-            color: white;
-            transform: scale(1.05);
-        }
-    </style>
+    .pdf-button:hover {
+      background-color: #28a745;
+      color: white;
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-    <div class="contenedor">
-        <header>
-            <h1>Bienvenido a Mi Página Web</h1>
-        </header>
+  <div class="contenedor">
+    <header>
+      <h1>Bienvenido a Mi Página Web</h1>
+    </header>
 
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
 
-        <main>
-            <section id="inicio">
-                <h2>Inicio</h2>
-                <p>¡Hola! Esta es una página web de ejemplo creada con HTML y CSS básico.</p>
-            </section>
+    <main>
+      <section id="inicio">
+        <h2>Inicio</h2>
+        <p>¡Hola! Esta es una página web de ejemplo creada con HTML y CSS básico.</p>
+      </section>
 
-            <section id="servicios">
-                <h2>Servicios</h2>
-                <ul>
-                    <li>Diseño Web</li>
-                    <li>Desarrollo Frontend</li>
-                    <li>SEO</li>
-                </ul>
-            </section>
+      <section id="servicios">
+        <h2>Servicios</h2>
+        <ul>
+          <li>Diseño Web</li>
+          <li>Desarrollo Frontend</li>
+          <li>SEO</li>
+        </ul>
+      </section>
 
-            <section id="contacto">
-                <h2>Contacto</h2>
-                <p>Email: contacto@example.com</p>
-            </section>
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Email: contacto@example.com</p>
+      </section>
 
-            <section class="pdf-section">
-                <h2>Mis Archivos PDF</h2>
-                <div class="pdf-container">
-                    <a href="documentos/archivo1.pdf" class="pdf-button" target="_blank">Archivo 1</a>
-                    <a href="documentos/archivo2.pdf" class="pdf-button" target="_blank">Archivo 2</a>
-                    <a href="documentos/archivo3.pdf" class="pdf-button" target="_blank">Archivo 3</a>
-                    <a href="documentos/archivo4.pdf" class="pdf-button" target="_blank">Archivo 4</a>
-                </div>
-            </section>
+      <section class="pdf-section">
+        <h2>Mis Archivos PDF</h2>
+        <div class="pdf-container">
+          <a href="documentos/archivo1.pdf" class="pdf-button" target="_blank">Archivo 1</a>
+          <a href="documentos/archivo2.pdf" class="pdf-button" target="_blank">Archivo 2</a>
+          <a href="documentos/archivo3.pdf" class="pdf-button" target="_blank">Archivo 3</a>
+          <a href="documentos/archivo4.pdf" class="pdf-button" target="_blank">Archivo 4</a>
+        </div>
+      </section>
+    </main>
 
-            <section id="inicio">
-                <h2>Inicio</h2>
-                <p>¡Hola! Esta es una página web de ejemplo creada con HTML y CSS básico.</p>
-            </section>
-
-            <section id="servicios">
-                <h2>Servicios</h2>
-                <ul>
-                    <li>Diseño Web</li>
-                    <li>Desarrollo Frontend</li>
-                    <li>SEO</li>
-                </ul>
-            </section>
-
-            <section id="contacto">
-                <h2>Contacto</h2>
-                <p>Email: contacto@example.com</p>
-            </section>
-
-            <section class="pdf-section">
-                <h2>Mis Archivos PDF</h2>
-                <div class="pdf-container">
-                    <a href="documentos/archivo1.pdf" class="pdf-button" target="_blank">Archivo 1</a>
-                    <a href="documentos/archivo2.pdf" class="pdf-button" target="_blank">Archivo 2</a>
-                    <a href="documentos/archivo3.pdf" class="pdf-button" target="_blank">Archivo 3</a>
-                    <a href="documentos/archivo4.pdf" class="pdf-button" target="_blank">Archivo 4</a>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; 2023 Mi Página Web. Todos los derechos reservados.</p>
-        </footer>
-    </div>
+    <footer>
+      <p>&copy; 2023 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+  </div>
 </body>
 </html>
