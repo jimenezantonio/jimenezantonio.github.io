@@ -2,66 +2,101 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Estadística jimenezantonio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Antonio Jiménez - Estadística UNEx</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet" />
   <style>
+    /* Reset básico */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
+      font-family: 'Roboto', sans-serif;
+      background-color: #dbeafe;
+      color: #1a1a1a;
       margin: 0;
       padding: 40px 0;
-      background-color: #dbeafe; /* fondo del margen exterior */
-      color: #333;
+      line-height: 1.5;
     }
 
     .contenedor {
-      max-width: 1000px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 0 20px;
       background-color: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     header {
-      background: #090c9b;
-      color: white;
-      padding: 20px;
+      background-color: #090c9b;
+      color: #fff;
+      padding: 30px 20px;
+      border-radius: 10px 10px 0 0;
       text-align: center;
+      font-family: 'Merriweather', serif;
+      box-shadow: inset 0 -3px 5px rgba(0,0,0,0.15);
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: 1px;
     }
 
     nav {
-      background: #3066be;
-      padding: 10px;
+      background-color: #3066be;
+      padding: 15px 0;
       text-align: center;
+      border-radius: 0 0 10px 10px;
+      margin-bottom: 30px;
     }
 
     nav a {
-      color: white;
+      color: #fff;
       text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
+      margin: 0 15px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
     }
 
-    nav a:hover {
-      text-decoration: underline;
+    nav a:hover, nav a:focus {
+      color: #ffdd57;
+      outline: none;
     }
 
-    main {
-      padding: 20px;
+    main section {
+      margin-bottom: 40px;
     }
 
-    footer {
-      background: #090c9b;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      border-top: 5px solid #222;
+    main h2 {
+      font-family: 'Merriweather', serif;
+      font-weight: 700;
+      font-size: 1.75rem;
+      margin-bottom: 15px;
+      color: #090c9b;
+      border-bottom: 3px solid #3066be;
+      padding-bottom: 5px;
     }
 
-    .pdf-section {
-      margin-top: 40px;
+    main p {
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    main ul {
+      list-style: none;
+      padding-left: 0;
+      color: #333;
+    }
+
+    main ul li {
+      margin-bottom: 10px;
+      font-weight: 500;
     }
 
     .pdf-container {
@@ -72,31 +107,43 @@
     }
 
     .pdf-button {
-      background-color: #ffffff;
-      border: 2px solid #090c9b;
-      border-radius: 15px;
-      padding: 15px 25px;
-      text-decoration: none;
-      color: #090c9b;
-      font-weight: bold;
-      transition: all 0.3s ease;
-      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-      display: inline-block;
-    }
-
-    .pdf-button:hover {
-      background-color: #090c9b;
+      flex: 1 1 200px;
+      text-align: center;
+      background-color: #3066be;
       color: white;
-      transform: scale(1.05);
+      text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 8px;
+      font-weight: 600;
+      box-shadow: 0 3px 6px rgba(48, 102, 190, 0.4);
+      transition: background-color 0.3s ease;
+      user-select: none;
     }
 
+    .pdf-button:hover, .pdf-button:focus {
+      background-color: #090c9b;
+      outline: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      color: #555;
+      font-size: 0.9rem;
+      border-top: 1px solid #ccc;
+      margin-top: 50px;
+      user-select: none;
+    }
+
+    /* Responsive */
     @media (max-width: 600px) {
       .pdf-container {
         flex-direction: column;
-        align-items: stretch;
       }
-      .pdf-button {
-        text-align: center;
+
+      nav a {
+        display: inline-block;
+        margin: 10px 0;
       }
     }
   </style>
@@ -104,49 +151,40 @@
 <body>
   <div class="contenedor">
     <header>
-      <h1>Bienvenido a Mi Página Web</h1>
+      <h1>Antonio Jiménez - Estadística UNEx</h1>
     </header>
 
     <nav>
       <a href="#inicio">Inicio</a>
-      <a href="#servicios">Servicios</a>
+      <a href="#archivos">Archivos PDF</a>
       <a href="#contacto">Contacto</a>
     </nav>
 
     <main>
       <section id="inicio">
-        <h2>Inicio</h2>
-        <p>¡Hola! Soy un estudiante del Grado en Estadística de la UNEx y me he propuesto subir archivos .pdf creados con LaTeX de los apuntes de clase, con el fin de ayudar a los compañeros que faltan o que no entienden del todo las clases.</p>
+        <h2>Introducción</h2>
+        <p>Soy estudiante del Grado en Estadística de la Universidad de Extremadura (UNEx). En esta página comparto apuntes y material en formato PDF, elaborados en LaTeX, para facilitar el estudio y la comprensión a mis compañeros.</p>
       </section>
 
-      <section id="servicios">
-        <h2>Servicios</h2>
-        <ul>
-          <li>Diseño Web</li>
-          <li>Desarrollo Frontend</li>
-          <li>SEO</li>
-        </ul>
+      <section id="archivos">
+        <h2>Archivos PDF Disponibles</h2>
+        <div class="pdf-container">
+          <a href="Investigación_Operativa.pdf" class="pdf-button" target="_blank" rel="noopener">Investigación Operativa</a>
+          <a href="documentos/archivo2.pdf" class="pdf-button" target="_blank" rel="noopener">Archivo 2</a>
+          <a href="documentos/archivo3.pdf" class="pdf-button" target="_blank" rel="noopener">Archivo 3</a>
+          <a href="documentos/archivo4.pdf" class="pdf-button" target="_blank" rel="noopener">Archivo 4</a>
+        </div>
       </section>
 
       <section id="contacto">
         <h2>Contacto</h2>
-        <p>Email: jimenezantonio@educarex.es</p>
-        <p>Outlook: ajimenezpx@alumnos.unex.es</p>
-      </section>
-
-      <section class="pdf-section">
-        <h2>Mis Archivos PDF</h2>
-        <div class="pdf-container">
-          <a href="Investigación_Operativa.pdf" class="pdf-button" target="_blank">Investigación Operativa</a>
-          <a href="documentos/archivo2.pdf" class="pdf-button" target="_blank">Archivo 2</a>
-          <a href="documentos/archivo3.pdf" class="pdf-button" target="_blank">Archivo 3</a>
-          <a href="documentos/archivo4.pdf" class="pdf-button" target="_blank">Archivo 4</a>
-        </div>
+        <p>Email institucional: <a href="mailto:jimenezantonio@educarex.es">jimenezantonio@educarex.es</a></p>
+        <p>Email Outlook: <a href="mailto:ajimenezpx@alumnos.unex.es">ajimenezpx@alumnos.unex.es</a></p>
       </section>
     </main>
 
     <footer>
-      <p>&copy; 2023 Mi Página Web. Todos los derechos reservados.</p>
+      <p>&copy; 2023 Antonio Jiménez. Todos los derechos reservados.</p>
     </footer>
   </div>
 </body>
