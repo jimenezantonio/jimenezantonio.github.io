@@ -13,27 +13,30 @@
             background-color: #f4f4f4;
             color: #333;
         }
+
         header {
             background: #35424a;
             color: white;
             padding: 20px;
             text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
         }
+
         nav {
             background: #e8491d;
             padding: 10px;
         }
+
         nav a {
             color: white;
             text-decoration: none;
             margin: 0 10px;
         }
+
         main {
             padding: 20px;
+            padding-bottom: 100px; /* espacio extra para que el footer no tape los botones */
         }
+
         footer {
             background: #35424a;
             color: white;
@@ -44,7 +47,6 @@
             width: 100%;
         }
 
-        /* 🎯 Nuevos estilos para los botones PDF */
         .pdf-section {
             margin-top: 40px;
         }
@@ -57,19 +59,20 @@
         }
 
         .pdf-button {
-            background-color: white;
-            border: 2px solid #007BFF;
+            background-color: #ffffff;
+            border: 2px solid #28a745;
             border-radius: 15px;
             padding: 15px 25px;
             text-decoration: none;
-            color: #007BFF;
+            color: #28a745;
             font-weight: bold;
             transition: all 0.3s ease;
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+            display: inline-block;
         }
 
         .pdf-button:hover {
-            background-color: #007BFF;
+            background-color: #28a745;
             color: white;
             transform: scale(1.05);
         }
@@ -89,6 +92,7 @@
             <h2>Inicio</h2>
             <p>¡Hola! Esta es una página web de ejemplo creada con HTML y CSS básico.</p>
         </section>
+
         <section id="servicios">
             <h2>Servicios</h2>
             <ul>
@@ -97,12 +101,12 @@
                 <li>SEO</li>
             </ul>
         </section>
+
         <section id="contacto">
             <h2>Contacto</h2>
             <p>Email: contacto@example.com</p>
         </section>
 
-        <!-- 📁 Nueva sección para los PDFs -->
         <section class="pdf-section">
             <h2>Mis Archivos PDF</h2>
             <div class="pdf-container">
@@ -110,7 +114,6 @@
                 <a href="documentos/archivo2.pdf" class="pdf-button" target="_blank">Archivo 2</a>
                 <a href="documentos/archivo3.pdf" class="pdf-button" target="_blank">Archivo 3</a>
                 <a href="documentos/archivo4.pdf" class="pdf-button" target="_blank">Archivo 4</a>
-                <!-- Puedes añadir más botones aquí -->
             </div>
         </section>
     </main>
